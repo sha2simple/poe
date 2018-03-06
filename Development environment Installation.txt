@@ -1,0 +1,79 @@
+Step 1
+
+Go to digital ocean and launch Unix server
+
+Step 2:
+
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu
+
+Install all the packages
+
+sudo apt-get update
+sudo apt-get install apache2
+
+Checking IP Address
+ifconfig eth0 | grep inet | awk '{ print $2 }'
+
+http://12.34.56.789 ( Type and see if it works not)
+
+
+sudo apt-get install apache2 -y
+Use the below command to confirm the installation:
+
+apache2 -v
+
+
+
+
+Step 3
+
+Install PHP
+
+https://www.vultr.com/docs/how-to-install-and-configure-php-70-or-php-71-on-ubuntu-16-04
+
+php -v
+
+Check PHP details on your browser
+
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04#step-4-test-php-processing-on-your-web-server
+
+sudo nano /var/www/html/info.php
+info.php
+<?php
+phpinfo();
+?>
+
+http://your_server_IP_address/info.php
+
+
+Step 4
+
+Install composer
+
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-14-04
+
+Step 5
+
+Install Git
+
+apt-get install git
+
+
+Step 5
+
+Download bootstrap template
+
+https://github.com/BlackrockDigital/startbootstrap-portfolio-item
+
+Clone the bootstrap
+
+https://github.com/BlackrockDigital/startbootstrap-portfolio-item.git
+
+
+We will cd into the web servers root folder and remove the default page and we will install uzip to decompress the zip file.
+cd /var/www/html
+sudo rm index.html
+apt-get install unzip
+
+http://46.101.14.60/
+
